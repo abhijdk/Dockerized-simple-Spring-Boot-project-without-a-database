@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.spring_boot_dockerized_enry_level.SpringBootDockerizedEnryLevelApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.461 s -- in com.example.spring_boot_dockerized_enry_level.SpringBootDockerizedEnryLevelApplicationTests
