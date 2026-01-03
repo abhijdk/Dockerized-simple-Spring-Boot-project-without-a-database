@@ -41,10 +41,10 @@ ENTRYPOINT ["java", "-jar", "e_d.jar"]
 Create a `Dockerfile` in the **same directory as `pom.xml`**:
 
 ```dockerfile
-FROM openjdk:17
+FROM eclipse-temurin:17-jdk
 WORKDIR /app
-COPY target/e_d.jar /app/e_d.jar
-ENTRYPOINT ["java", "-jar", "e_d.jar"]
+COPY target/demo.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
 ---
