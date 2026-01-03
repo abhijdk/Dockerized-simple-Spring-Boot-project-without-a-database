@@ -23,7 +23,21 @@ This ensures the generated JAR file will be named `e_d.jar`.
 
 ---
 
-### **3. Create a `Dockerfile` in the Root of the Project**
+### **3A. Create a `Dockerfile` in the Root of the Project**
+Create a `Dockerfile` in the **same directory as `pom.xml`**:
+
+```dockerfile
+FROM openjdk:17
+WORKDIR /app
+COPY target/e_d.jar /app/e_d.jar
+ENTRYPOINT ["java", "-jar", "e_d.jar"]
+```
+
+---
+
+
+
+### **3B. [Relpacement of New Version] Create a `Dockerfile` in the Root of the Project**
 Create a `Dockerfile` in the **same directory as `pom.xml`**:
 
 ```dockerfile
