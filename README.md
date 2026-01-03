@@ -43,7 +43,7 @@ Create a `Dockerfile` in the **same directory as `pom.xml`**:
 ```dockerfile
 FROM eclipse-temurin:17-jdk
 WORKDIR /app
-COPY target/demo.jar app.jar
+COPY target/e_d.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
 ```
 
